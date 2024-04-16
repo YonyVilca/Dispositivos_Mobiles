@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+ <!--
+    * Descripción:Programar la funcionalidad para que al hacer clic en la imagen, se muestre un
+      Toast con un mensaje personalizado..
+    * Autor: Yony Alex Vilca Mamani.
+    * Fecha: 22/03/2024
+    * Modificación: 22/03/2024
+    /-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 

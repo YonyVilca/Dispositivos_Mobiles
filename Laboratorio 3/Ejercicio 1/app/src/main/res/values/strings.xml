@@ -1,6 +1,4 @@
 <resources>
     <string name="app_name">Ejercicio 1</string>
-    <string name="textview2">escriba un mensaje</string>
-    <string name="Button2">Click</string>
-    <string name="imgView">¡Clic en la imagen!</string>
+    <string name="imgView">¡Universidad la salle!</string>
 </resources>
