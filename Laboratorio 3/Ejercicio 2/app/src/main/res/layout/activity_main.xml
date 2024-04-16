@@ -15,13 +15,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewresultado"
+        android:id="@+id/resultado"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:hint="0"
+        android:text=""
         android:textAlignment="viewEnd"
-        android:text="0"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2b"
         app:layout_constraintEnd_toStartOf="@+id/guideline2"
         app:layout_constraintHorizontal_bias="0.498"
@@ -29,7 +30,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline1b" />
 
     <Button
-        android:id="@+id/buttonlimpiar"
+        android:id="@+id/limpiar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -42,7 +43,7 @@
         app:layout_constraintTop_toTopOf="@+id/guideline2b" />
 
     <Button
-        android:id="@+id/buttoneliminar"
+        android:id="@+id/eliminar"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -57,7 +58,7 @@
 
 
     <Button
-        android:id="@+id/buttondividir"
+        android:id="@+id/dividir"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -71,43 +72,46 @@
         app:layout_constraintVertical_bias="0.377" />
 
     <Button
-        android:id="@+id/buttonsiete"
+        android:id="@+id/numsiete"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="7"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4b"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline3b" />
 
     <Button
-        android:id="@+id/buttonocho"
+        android:id="@+id/numocho"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="8"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4b"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline3b" />
 
     <Button
-        android:id="@+id/buttonnueve"
+        android:id="@+id/numnueve"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="9"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline4b"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline3b" />
 
     <Button
-        android:id="@+id/buttonmultiplicacion"
+        android:id="@+id/producto"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -119,43 +123,46 @@
         app:layout_constraintTop_toTopOf="@+id/guideline3b" />
 
     <Button
-        android:id="@+id/buttoncuatro"
+        android:id="@+id/numcuatro"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="4"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5b"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline4b" />
 
     <Button
-        android:id="@+id/buttoncinco"
+        android:id="@+id/numcinco"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="5"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5b"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline4b" />
 
     <Button
-        android:id="@+id/buttonseis"
+        android:id="@+id/numseis"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="6"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline5b"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline4b" />
 
     <Button
-        android:id="@+id/buttonmenos"
+        android:id="@+id/menos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -167,43 +174,46 @@
         app:layout_constraintTop_toTopOf="@+id/guideline4b" />
 
     <Button
-        android:id="@+id/buttonuno"
+        android:id="@+id/numuno"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="1"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6b"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline5b" />
 
     <Button
-        android:id="@+id/buttondos"
+        android:id="@+id/numdos"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="2"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6b"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline3"
         app:layout_constraintTop_toTopOf="@+id/guideline5b" />
 
     <Button
-        android:id="@+id/buttontres"
+        android:id="@+id/numtres"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="3"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline6b"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline5b" />
 
     <Button
-        android:id="@+id/buttonsuma"
+        android:id="@+id/suma"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
@@ -215,32 +225,33 @@
         app:layout_constraintTop_toTopOf="@+id/guideline5b" />
 
     <Button
-        android:id="@+id/buttoncero"
+        android:id="@+id/numcero"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
-        android:onClick="escribircero"
+        android:onClick="precionarDigito"
         android:text="0"
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7b"
         app:layout_constraintEnd_toStartOf="@+id/guideline4"
         app:layout_constraintStart_toStartOf="@+id/guideline1"
         app:layout_constraintTop_toTopOf="@+id/guideline6b" />
 
     <Button
-        android:id="@+id/buttonpunto"
+        android:id="@+id/punto"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"
-        android:textSize="50dp"
+        android:onClick="precionarDigito"
         android:text="."
+        android:textSize="50dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline7b"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline6b" />
 
     <Button
-        android:id="@+id/buttonigual"
+        android:id="@+id/igual"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_margin="5dp"

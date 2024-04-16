@@ -1,6 +1,8 @@
 package com.example.ejercicio2
 
 import android.os.Bundle
+import android.view.View
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,26 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        }
+
+    fun precionarDigito (view: View) {
+        val resultado: TextView = findViewById(R.id.resultado)
+        var result: String = resultado.text.toString()
+
+        when(view.id){
+            R.id.numcero -> resultado.setText(result + "0")
+            R.id.numuno -> resultado.setText(result + "1")
+            R.id.numdos -> resultado.setText(result + "2")
+            R.id.numtres -> resultado.setText(result + "3")
+            R.id.numcuatro -> resultado.setText(result + "4")
+            R.id.numcinco -> resultado.setText(result + "5")
+            R.id.numseis-> resultado.setText(result + "6")
+            R.id.numsiete -> resultado.setText(result + "7")
+            R.id.numocho -> resultado.setText(result + "8")
+            R.id.numnueve -> resultado.setText(result + "9")
+            R.id.punto -> resultado.setText(result + ".")
+
         }
     }
 }
