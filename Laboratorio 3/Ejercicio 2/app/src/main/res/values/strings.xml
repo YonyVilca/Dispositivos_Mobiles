@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Ejercicio 2</string>
-    <string name="Titulo"><b>Calculadora</b>></string>
-    <string name="n1"><b>Valor1</b>></string>
-    <string name="n2"><b>Valor2</b>></string>
-    <string name="resultado"><b>Resultado</b>></string>
-    <string name="Sumar"><b>Sumar</b>></string>
-    <string name="Restar"><b>Restar</b>></string>
-    <string name="Dividir"><b>Dividir</b>></string>
-    <string name="Multiplicar"><b>Multiplicar</b>></string>
+    <string name="Titulo"><b>Calculadora</b></string>
+    <string name="n1"><b>Valor1</b></string>
+    <string name="n2"><b>Valor2</b></string>
+    <string name="resultado"><b>Resultado</b></string>
+    <string name="Sumar"><b>Sumar</b></string>
+    <string name="Restar"><b>Restar</b></string>
+    <string name="Dividir"><b>Dividir</b></string>
+    <string name="Multiplicar"><b>Multiplicar</b></string>
 
 </resources>
