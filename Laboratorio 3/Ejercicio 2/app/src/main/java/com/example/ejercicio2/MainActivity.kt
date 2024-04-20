@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var n1: TextView
     lateinit var n2: TextView
     lateinit var resultado: TextView
+    private var currentNumber = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,6 +27,26 @@ class MainActivity : AppCompatActivity() {
         val dividir: Button = findViewById(R.id.button3)
         val multiplicar: Button = findViewById(R.id.button4)
 
+        // Obtener los botones numéricos
+        val buttons = arrayOf(
+            findViewById<Button>(R.id.button5), findViewById<Button>(R.id.button6),
+            findViewById<Button>(R.id.button7), findViewById<Button>(R.id.button8),
+            findViewById<Button>(R.id.button9), findViewById<Button>(R.id.button10),
+            findViewById<Button>(R.id.button11), findViewById<Button>(R.id.button12),
+            findViewById<Button>(R.id.button13), findViewById<Button>(R.id.button14)
+        )
+
+        // Asignar listeners de clic a los botones numéricos
+        for (button in buttons) {
+            button.setOnClickListener {
+                val number = button.text.toString()
+                // Obtener el TextView activo
+                val activeTextView = if (n1.hasFocus()) n1 else n2
+                // Obtener el texto actual y agregar el número presionado
+                val currentText = activeTextView.text.toString()
+                activeTextView.text = currentText + number
+            }
+        }
         sumar.setOnClickListener { calculate('+') }
         restar.setOnClickListener { calculate('-') }
         dividir.setOnClickListener { calculate('/') }
@@ -43,5 +64,10 @@ class MainActivity : AppCompatActivity() {
             else -> Double.NaN
         }
         resultado.text = if (result.isNaN()) "Error" else result.toString()
+        // Restablecer el registro de números después de realizar la operación
+        currentNumber = ""
+        // Borrar los TextViews de entrada
+        n1.text = ""
+        n2.text = ""
     }
 }

@@ -8,5 +8,16 @@
     <string name="Restar"><b>Restar</b></string>
     <string name="Dividir"><b>Dividir</b></string>
     <string name="Multiplicar"><b>Multiplicar</b></string>
+    <string name="cero"><b>0</b></string>
+    <string name="uno"><b>1</b></string>
+    <string name="dos"><b>2</b></string>
+    <string name="tres"><b>3</b></string>
+    <string name="cuatro"><b>4</b></string>
+    <string name="cinco"><b>5</b></string>
+    <string name="seis"><b>6</b></string>
+    <string name="siete"><b>7</b></string>
+    <string name="ocho"><b>8</b></string>
+    <string name="nueve"><b>9</b></string>
+
 
 </resources>
