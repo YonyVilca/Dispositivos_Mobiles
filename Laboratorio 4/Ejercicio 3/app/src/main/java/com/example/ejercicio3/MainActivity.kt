@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         spinner = findViewById(R.id.spinnerAudios)
         btnSelect = findViewById(R.id.btnSelect)
 
-        val audios = arrayOf("Audio1", "Audio2", "Audio3", "Audio4", "Audio5")
+        val audios = arrayOf("audio1", "audio2", "audio3", "audio4", "audio5")
 
         val adapter = ArrayAdapter(this, android.R.layout.simple_spinner_item, audios)
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
