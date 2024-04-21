@@ -2,4 +2,8 @@
     <string name="app_name">Ejercicio 3</string>
     <string name="Seleccionar">Seleccionar audio</string>
     <string name="Seleccionar1">Seleccionar</string>
+    <string name="nombreA">Nombre del audio</string>
+    <string name="reproducir">Reproducir</string>
+    <string name="pausar">Pausar</string>
+    <string name="detener">Detener</string>
 </resources>
