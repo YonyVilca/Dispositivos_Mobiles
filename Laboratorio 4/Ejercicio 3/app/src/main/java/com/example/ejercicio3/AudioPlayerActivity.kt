@@ -19,6 +19,7 @@ class AudioPlayerActivity : AppCompatActivity() {
         val btnPlay = findViewById<Button>(R.id.btnPlay)
         val btnPause = findViewById<Button>(R.id.btnPause)
         val btnStop = findViewById<Button>(R.id.btnStop)
+        val btnBack = findViewById<Button>(R.id.btnBack)
 
         val selectedAudio = intent.getStringExtra("selectedAudio")
         audioName = selectedAudio ?: "Audio Desconocido"
@@ -40,6 +41,9 @@ class AudioPlayerActivity : AppCompatActivity() {
             mediaPlayer.stop()
             mediaPlayer.prepare()
             mediaPlayer.seekTo(0)
+        }
+        btnBack.setOnClickListener {
+            finish() // Cierra esta actividad y regresa a la actividad anterior
         }
     }
 
