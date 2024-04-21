@@ -28,7 +28,12 @@ class MainActivity : AppCompatActivity() {
         n2 = findViewById(R.id.editTextText2)
         resultado = findViewById(R.id.editTextText3)
 
-        
+        // Restaurar estado guardado si está disponible
+        savedInstanceState?.let {
+            n1.text = it.getString(KEY_N1_TEXT, "")
+            n2.text = it.getString(KEY_N2_TEXT, "")
+            currentNumber = it.getString(KEY_CURRENT_NUMBER, "")
+        }
 
         val sumar: Button = findViewById(R.id.button)
         val restar: Button = findViewById(R.id.button2)
