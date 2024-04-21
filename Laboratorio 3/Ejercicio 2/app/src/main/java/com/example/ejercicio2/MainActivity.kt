@@ -13,6 +13,12 @@ class MainActivity : AppCompatActivity() {
     lateinit var n2: TextView
     lateinit var resultado: TextView
     private var currentNumber = ""
+    //Agregando constantes de clave
+    companion object {
+        private const val KEY_N1_TEXT = "n1_text"
+        private const val KEY_N2_TEXT = "n1_text"
+        private const val KEY_CURRENT_NUMBER = "current_number"
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +27,8 @@ class MainActivity : AppCompatActivity() {
         n1 = findViewById(R.id.Titulo2)
         n2 = findViewById(R.id.editTextText2)
         resultado = findViewById(R.id.editTextText3)
+
+        
 
         val sumar: Button = findViewById(R.id.button)
         val restar: Button = findViewById(R.id.button2)
