@@ -8,12 +8,41 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="148dp"
+        android:text="@string/Seleccionar"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerAudios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textTitle"
+        android:layout_marginTop="36dp"
+        android:background="@android:drawable/edit_text"
+        android:padding="8dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitle" />
+
+    <Button
+        android:id="@+id/btnSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerAudios"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="144dp"
+        android:text="@string/Seleccionar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerAudios" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
